@@ -1,8 +1,15 @@
+import { GlobalProvider } from "./context/GlobalContext"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App = () => {
   return (
-    <div>App</div>
+    <GlobalProvider>
+      <BrowserRouter>
+        <Routes>
+
+        </Routes>
+      </BrowserRouter>
+    </GlobalProvider>
   )
 }
 
